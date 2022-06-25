@@ -1,0 +1,103 @@
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    margin: 0;
+}
+
+main {
+    background-color: hsl(275, 100%, 25%);
+    border-radius: 7.5px;
+    margin: 20% 7.5%;
+}
+
+img {
+    opacity: 0.4;
+}
+
+#ih-mobile {
+    border-radius: 7.5px 7.5px 0 0;
+    display: block;
+    width: 100%;
+}
+
+#card-body {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 0 0 7.5px 7.5px;
+    padding: 7.5%;
+    text-align: center;
+}
+
+#ih-desktop {
+    border-radius: 0 7.5px 7.5px 0;
+    display: none;
+    width: 50%;
+}
+
+h1,
+h2,
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.75em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-top: 12%;
+}
+
+h2 {
+    margin: 3% 0;
+}
+
+li>div {
+    color: hsla(0, 0%, 100%, 0.6);
+    font: .8em 'Lexend Deca', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        font-size: 1.075em;
+        margin: 12%;
+    }
+    #ih-mobile {
+        display: none;
+    }
+    #card-body {
+        border-radius: 7.5px 0 0 7.5px;
+        padding: 5% 10% 5% 7%;
+        text-align: left;
+        width: 50%;
+    }
+    #ih-desktop {
+        display: block;
+    }
+    p {
+        line-height: 1.5em;
+    }
+    main,
+    ul {
+        display: flex;
+    }
+    h2 {
+        margin: 5% 0;
+    }
+    li {
+        width: 33%;
+    }
